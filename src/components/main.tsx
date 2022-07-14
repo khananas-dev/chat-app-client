@@ -1,7 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useCallback } from "react";
 import Chat from "./chat/chat";
 import Login from "./login/login";
-import moment from "moment";
 import socket from "../utils/socket";
 
 export default function Main() {

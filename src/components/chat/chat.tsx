@@ -1,25 +1,9 @@
-import { Box, Tabs, Tab } from "@mui/material";
+/* eslint-disable react-hooks/exhaustive-deps */
 import moment from "moment";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import BroadcastMessageDetail from "../broadcast-message-detail/broadcast-message-detail";
 import MessageDetail from "../message-detail/message-detail";
 import Navbar from "../navbar/navbar";
 
-function TabPanel(props: any) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && children}
-    </div>
-  );
-}
 function Chat({ user, users, messages, setMessages, socket, setUsers }: any) {
   // States
   const [message, setMessage] = useState("");

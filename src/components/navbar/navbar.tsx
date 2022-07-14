@@ -1,14 +1,12 @@
-import React, { useContext } from "react";
-import AuthContext from "../context/authentication";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
 
 export default function Navbar({ user }: any) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Chat Box
-          </a>
+          <span className="navbar-brand">Chat Box</span>
           <button
             className="navbar-toggler"
             type="button"

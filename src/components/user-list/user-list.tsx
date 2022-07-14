@@ -47,19 +47,6 @@ export default function UserList({ user, users, selectedUser }: any) {
         ) : (
           <div className="name text-center">No user connected</div>
         )}
-
-        {/* <li
-          className="clearfix d-flex align-items-center"
-          key={`userList-${index}`}
-        >
-          <img
-            src="https://aui.atlassian.com/aui/8.8/docs/images/avatar-person.svg"
-            alt="avatar"
-          />
-          <div className="about">
-            <div className="name">{item.userName}</div>
-          </div>
-        </li> */}
       </ul>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import UserList from "../user-list/user-list";
 
 export default function MessageDetail({
@@ -114,7 +114,4 @@ export default function MessageDetail({
       </div>
     </div>
   );
-}
-function useChatScroll(messages: any) {
-  throw new Error("Function not implemented.");
 }
